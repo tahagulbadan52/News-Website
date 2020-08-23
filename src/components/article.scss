@@ -1,0 +1,32 @@
+.article {
+    display: grid;
+    grid-template-areas: "__img cat"
+        "__img title"
+        "__img btn-panel";
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 4px 10px;
+
+    &__img {
+        width: 30vw;
+        height: 30vw;
+        grid-area: __img;
+    }
+
+    &__category {
+        // background-color: blue;
+        grid-area: cat;
+    }
+
+    &__title {
+        // background-color: red;
+        grid-area: title;
+    }
+
+    &__btn-panel {
+        // background-color: green;
+        grid-area: btn-panel;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
